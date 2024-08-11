@@ -1,4 +1,4 @@
-Atividade Disciplina DEsenvolvimento para WEB
+Atividade Disciplina Desenvolvimento para WEB
 
 TEMA: Cadastro de cliente
 

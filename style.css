@@ -1,23 +1,28 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    color: #FFBE02;
+    text-shadow: black;
+    margin: 0px;
+    padding: 0px;
 }
 .title{
-    background-color: #ccc;
+    background-color: black;
     text-align: center;
 }
 .logo{
     text-align: center;
-    
+}
+.logo img{
+    width: 450px;
+    height: auto;
 }
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    border: 3px solid #FFBE02;
+    border-radius: 15px;
+    background-color: black;
 }
 label {
     display: block;
@@ -46,5 +51,5 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color:#ccc;
+    background-color: white;
 }

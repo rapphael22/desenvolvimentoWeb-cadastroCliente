@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResultadoCadastro</title>
+    <script>
+        function mostrarDados() {
+            // Obtém os dados do localStorage
+            const nome = localStorage.getItem('nome');
+            const email = localStorage.getItem('email');
+
+            // Exibe os dados na página
+            document.getElementById('nome').textContent = nome;
+            document.getElementById('email').textContent = email;
+        }
+
+        // Chama a função para mostrar os dados quando a página carrega
+        window.onload = mostrarDados;
+    </script>
+</head>
+<body>
+    <h1>Dados Cadastrados</h1>
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>E-mail:</strong> <span id="email"></span></p>
+    <a href="index.html">Voltar para o Cadastro</a>
+</body>
+</html>

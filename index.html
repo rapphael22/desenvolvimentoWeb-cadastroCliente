@@ -5,13 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>TelaCadastro</title>
+
+    <script>
+        function salvarDados() {
+            // Obtemos os valores dos campos do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const senha = document.getElementById('senha').value;
+            const endereco = document.getElementById('endereco').value;
+            const cidade = document.getElementById('cidade').value;
+            const estado = document.getElementById('estado').value;
+            const cep = document.getElementById('cep').value;
+
+            // Salvamos os valores no localStorage
+            localStorage.setItem('nome', nome);
+            localStorage.setItem('email', email);
+            localStorage.setItem('telefone', telefone);
+            localStorage.setItem('senha', senha);
+            localStorage.setItem('endereco', endereco);
+            localStorage.setItem('cidade', cidade);
+            localStorage.setItem('estado', estado);
+            localStorage.setItem('cep', cep);
+
+            // Redirecionamos para a página de visualização
+            window.location.href = 'visualizacao.html';
+        }
+    </script>
 </head>
 <body>
     <br>
     <br>
    <div class="logo"><img src="fastServices.jpg" alt=""></div>
 
-    <div class="title"><h1>CADASTRE O CLIENTE</h1></div>
+    <div class="title"><h1>CADASTRE O SEU CLIENTE</h1></div>
    
     <div>
         <form action="/submit_form" method="post">
